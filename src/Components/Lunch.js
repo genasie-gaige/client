@@ -4,8 +4,9 @@ import { getAll } from "../GraphQl/Query"
 
 function Lunch(){
     const [lunchTotal, setLunchTotal] = useState(0)
-    const{ data } = useQuery(getAll)
+    const{ data, loading } = useQuery(getAll)
     let items = ""
+    if(loading) return "loading"
     return(
         <div className="meal">
             <h2 style={{ color: "rgb(3, 73, 85)"}}>Lunch</h2>

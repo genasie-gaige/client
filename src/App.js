@@ -7,7 +7,6 @@ import Dinner from "./Components/Dinner"
 import Lunch from "./Components/Lunch"
 import Snack from "./Components/Snack"
 
-
 function App() {
 
   const [dailyTotal, setDailyTotal] = useState(1600)
